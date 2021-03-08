@@ -1,1 +1,4 @@
-TODO
+CLEAN (true --> false),-0.70
+DATA_SIZE (5 --> 10),+4.00
+"DATA_SIZE (5 --> 10),ROUNDS (1 --> 2)",+1.5
+ROUNDS (1 --> 2),+1.5
