@@ -22,10 +22,9 @@ public class TaskHandler {
     this.task.allocateSpace(blocksNeeded);
 
     int iterations = blocksNeeded * this.rounds;
+    this.populate(iterations);
     if (iterations > Utils.DEF_POOL_SIZE) {
       this.validate(iterations);
-    } else {
-      this.populate(iterations);
     }
   }
 
