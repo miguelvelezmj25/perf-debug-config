@@ -4,7 +4,7 @@ import edu.cmu.cs.mvelezce.perf.debug.config.utils.Utils;
 
 public class Task {
 
-  public void clean(boolean clean) {
+  public void prep(boolean clean) {
     if (clean) { // Influenced by: CLEAN
       Utils.clean();
     }
