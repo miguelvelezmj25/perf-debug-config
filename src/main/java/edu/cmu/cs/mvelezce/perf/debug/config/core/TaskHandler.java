@@ -16,13 +16,13 @@ public class TaskHandler {
   }
 
   public void work() {
-    this.task.clean(this.clean);
+    this.task.prep(this.clean);
 
     int blocksNeeded = this.dataSize / Utils.BLOCK_SIZE;
     this.task.allocateSpace(blocksNeeded);
 
     int iterations = blocksNeeded * this.rounds;
-    this.populate(iterations);
+    this.insert(iterations);
     if (iterations > Utils.DEF_POOL_SIZE) {
       this.validate(iterations);
     }
@@ -30,10 +30,10 @@ public class TaskHandler {
 
   private void validate(int iterations) {
     Utils.assertIterations(iterations);
-    this.populate(iterations);
+    this.insert(iterations);
   }
 
-  private void populate(int iterations) {
+  private void insert(int iterations) {
     this.task.populate(iterations);
   }
 }
