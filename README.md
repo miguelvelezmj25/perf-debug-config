@@ -2,11 +2,11 @@
 Program that writes data to disk.
 
 ## Performance bug report
-I am using your program to write some data, but it is taking quite some time to execute (about 17.1 seconds). 
+I am using your program to write some data, but it is taking quite some time to execute (about 9.2 seconds). 
 This is the configuration that I used:
  
-* `clean = false`
-* `dataSize = 10`
+* `clean = true`
+* `dataSize = 5`
 * `rounds = 2`
 
 Could you please take a look at why the program is taking so long?
@@ -18,12 +18,12 @@ Could you please take a look at why the program is taking so long?
 
 ### clean
 Cleans the existing data.
-Default = true
+Default = false
 
 ### data
 The size of the data to write.
-Default = 2
+Default = 5
 
 ### rounds
 The number of times to write.
-Default = 1;
+Default = 10;
