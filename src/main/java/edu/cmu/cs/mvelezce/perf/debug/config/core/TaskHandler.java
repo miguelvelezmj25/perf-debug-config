@@ -23,7 +23,7 @@ public class TaskHandler {
 
     int iterations = blocksNeeded * this.rounds;
     this.insert(iterations);
-    if (iterations > Utils.DEF_POOL_SIZE) {
+    if (iterations >= Utils.DEF_POOL_SIZE) {
       this.validate(iterations);
     }
   }
