@@ -2,7 +2,7 @@
 Program that writes data to disk.
 
 ## Performance bug report
-I am using your program to write some data, but it is taking quite some time to execute (about 9.2 seconds). 
+I am using your program to write some data, but it is taking quite some time to execute (about 15.2 seconds). 
 This is the configuration that I used:
  
 * `clean = true`
