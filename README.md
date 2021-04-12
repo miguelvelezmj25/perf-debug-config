@@ -26,4 +26,4 @@ Default = 5
 
 ### rounds
 The number of times to write.
-Default = 10;
+Default = 1
