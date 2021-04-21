@@ -11,13 +11,13 @@ public class Task {
   }
 
   public void allocateSpace(int blocksNeeded) {
-    for (int i = 0; i < blocksNeeded; i++) { // Influenced by: DATA_SIZE
+    for (int i = 0; i < blocksNeeded; i++) {
       Utils.incrementStorage();
     }
   }
 
   public void populate(int iterations) {
-    for (int i = 0; i < iterations; i++) { // Influenced by: DATA_SIZE, ROUNDS
+    for (int i = 0; i < iterations; i++) { // Influenced by: ROUNDS
       Utils.write(i);
     }
   }
